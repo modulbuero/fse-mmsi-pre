@@ -105,8 +105,7 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--inter)",
-			"lineHeight": "1.5",
-			"fontSize":"12px"
+			"lineHeight": "22px"
 		}
 	}
 }
