@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wp-site-blocks {
   margin-top: 0;
   align-items: flex-start;
@@ -12,6 +13,19 @@
   margin-top: 0;
   padding-bottom: 0;
   /*Editor-Content*/
+  /*Buttons*/
+  /* ===== Feature card (fixed height so collapsing won't change height) ===== */
+  /* Make the Columns fill the card height */
+  /* Left side (image column) */
+  /* overlay layer */
+  /* ===== When collapsed → remove overlay ===== */
+  /* Ensure WP image fills the column height */
+  /* Right side (text column) */
+  /* ===== Collapsed state ===== */
+}
+.wp-site-blocks > main .medium-p {
+  font-size: var(--wp--preset--font-size--medium);
+  line-height: 26px !important;
 }
 .wp-site-blocks > main .wp-block-button__link {
   font-size: var(--wp--preset--font-size--xs);
@@ -21,6 +35,67 @@
 .wp-site-blocks > main .wp-block-button__link:hover {
   background-color: #F5F5F5;
   color: var(--wp--preset--color--secondary);
+}
+.wp-site-blocks > main .mmsi-feature {
+  /* adjust these to match your XD design */
+  height: clamp(260px, 28vw, 420px);
+  overflow: hidden;
+}
+.wp-site-blocks > main .mmsi-feature > .wp-block-columns {
+  height: 100%;
+  align-items: stretch;
+  gap: clamp(16px, 2vw, 32px);
+  margin: 0;
+}
+.wp-site-blocks > main .mmsi-feature__media {
+  flex: 0 0 58%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.wp-site-blocks > main .mmsi-feature__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* adjust darkness */
+  opacity: 1;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+.wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media::after {
+  opacity: 0;
+}
+.wp-site-blocks > main .mmsi-feature__media figure,
+.wp-site-blocks > main .mmsi-feature__media .wp-block-image,
+.wp-site-blocks > main .mmsi-feature__media img {
+  height: 100%;
+}
+.wp-site-blocks > main .mmsi-feature__media img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+.wp-site-blocks > main .mmsi-feature__text {
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.45s ease, transform 0.55s ease, flex-basis 0.55s ease;
+  will-change: opacity, transform, flex-basis;
+}
+.wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media {
+  flex-basis: 100%;
+  transition: flex-basis 0.55s ease;
+}
+.wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__text {
+  opacity: 0;
+  transform: translateX(18px);
+  flex-basis: 0%;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 /*Fonts*/

@@ -5,4 +5,12 @@
     justify-content: center;
     flex-basis:30%;
     align-items: flex-end;
+
+    .parts-header > div {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
 }
