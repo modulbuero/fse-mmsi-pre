@@ -1,0 +1,11 @@
+.wp-site-blocks {
+  margin-top: 0;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.wp-site-blocks > main {
+  flex-basis: 70%;
+  min-height: 100vh;
+  justify-content: center;
+  /*Editor-Content*/
+}/*# sourceMappingURL=content.css.map */
