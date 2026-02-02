@@ -7,5 +7,8 @@
   flex-basis: 70%;
   min-height: 100vh;
   justify-content: center;
+  margin-block-start: 0;
+  margin-top: 0;
+  padding-bottom: 0;
   /*Editor-Content*/
 }/*# sourceMappingURL=content.css.map */
