@@ -1,3 +1,7 @@
+:root {
+  --wp--style--global--content-size: 1066px;
+}
+
 .wp-site-blocks {
   margin-top: 0;
   align-items: flex-start;
@@ -18,6 +22,9 @@
   /* Overlay */
   /* text */
   /* COLLAPSED STATE */
+}
+.wp-site-blocks > main .entry-content {
+  padding-right: 120px;
 }
 .wp-site-blocks > main .medium-p {
   font-size: var(--wp--preset--font-size--medium);
@@ -145,8 +152,9 @@
   font-size: 12px;
 }
 
-/*Fonts*/
 body {
+  --mbfse--margin-bottom-block: 120px;
+  /*Fonts*/
   --wp--preset--font-size--large:28px;
   --wp--preset--font-size--medium:18px;
   --wp--preset--font-size--small:16px;

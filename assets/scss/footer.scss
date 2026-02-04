@@ -1,3 +1,8 @@
 .wp-site-blocks > footer{
     width: 100% !important;
+    background-color: var(--wp--preset--color--secondary) !important;
+    height: 40px;
+    >div {
+        padding: 0 !important;
+    }
 }
