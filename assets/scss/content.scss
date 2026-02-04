@@ -28,88 +28,99 @@
             
         }
 
-        /* ===== Feature card (fixed height so collapsing won't change height) ===== */
+/* Animated Card */ 
 .mmsi-feature{
-  /* adjust these to match your XD design */
   height: clamp(260px, 28vw, 420px);
   overflow: hidden;
+  gap: 0 !important;
+  padding: 0 !important;
+
+  > .wp-block-columns{
+    height: 100%;
+    align-items: stretch;
+    margin: 0;
+  }
 }
 
-/* Make the Columns fill the card height */
-.mmsi-feature > .wp-block-columns{
-  height: 100%;
-  align-items: stretch;
-  gap: clamp(16px, 2vw, 32px);
-  margin: 0;
-}
-
-/* Left side (image column) */
+/* image */
 .mmsi-feature__media{
-  flex: 0 0 58%;
+  flex: 0 0 70%;
+  max-width: 70%;
   height: 100%;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  figure, .wp-block-image {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: unset  !important;
+   }
+   img{
+    height: 100%;
+    max-width: none;
+    object-fit: fill !important;
+    display: block;
+    cursor: pointer;
+  }
 }
 
-/* overlay layer */
+/* Overlay */
 .mmsi-feature__media::after{
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.25); /* adjust darkness */
-  opacity: 1;
+  background: rgba(0,0,0,.25);
   transition: opacity .45s ease;
   pointer-events: none;
 }
 
-/* ===== When collapsed → remove overlay ===== */
-.mmsi-feature.is-collapsed .mmsi-feature__media::after{
-  opacity: 0;
-}
-
-
-/* Ensure WP image fills the column height */
-.mmsi-feature__media figure,
-.mmsi-feature__media .wp-block-image,
-.mmsi-feature__media img{
-  height: 100%;
-}
-
-.mmsi-feature__media img{
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  cursor: pointer;
-}
-
-/* Right side (text column) */
+/* text */
 .mmsi-feature__text{
-  flex: 1 1 auto;
+  flex: 0 0 30%;
+  max-width: 30%;
   height: 100%;
+  min-width: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   transition:
-    opacity .45s ease,
-    transform .55s ease,
-    flex-basis .55s ease;
-  will-change: opacity, transform, flex-basis;
+    opacity .35s ease,
+    transform .45s ease;
 }
 
-/* ===== Collapsed state ===== */
-.mmsi-feature.is-collapsed .mmsi-feature__media{
-  flex-basis: 100%;
-  transition: flex-basis .55s ease;
+/* COLLAPSED STATE */
+.mmsi-feature.is-collapsed {
+  .mmsi-feature__media{
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  /* Remove overlay */
+  .mmsi-feature__media::after{
+    opacity: 0;
+  }
+  /* Text disappears */
+  .mmsi-feature__text{
+    opacity: 0;
+    transform: translateX(16px);
+    pointer-events: none;
+    display: none;
+    width: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.mmsi-feature.is-collapsed .mmsi-feature__text{
-  opacity: 0;
-  transform: translateX(18px);
-  flex-basis: 0%;
-  pointer-events: none;
-  overflow: hidden;
-}
+
+
 .nf-form-cont {
   padding: 50px 90px;
   .nf-form-title {
