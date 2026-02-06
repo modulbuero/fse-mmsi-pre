@@ -1,8 +1,28 @@
 .wp-site-blocks > footer {
   width: 100% !important;
   background-color: var(--wp--preset--color--secondary) !important;
-  height: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .wp-site-blocks > footer > div {
   padding: 0 !important;
+}
+.wp-site-blocks > footer > div > div {
+  margin: 0 !important;
+}
+.wp-site-blocks > footer > div ul {
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.wp-site-blocks > footer > div ul li a span {
+  color: var(--wp--preset--color--base) !important;
+  font-size: 10px !important;
+}
+.wp-site-blocks > footer > div nav {
+  margin: 0 !important;
+  max-width: unset !important;
+}
+.wp-site-blocks > footer > div nav > div {
+  width: 100%;
 }/*# sourceMappingURL=footer.css.map */
