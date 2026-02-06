@@ -7,6 +7,7 @@
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 40px !important;
 }
 .wp-site-blocks > main {
   flex-basis: 70%;

@@ -12,5 +12,8 @@
 
     ul {
         flex-direction: column;
+        a {
+            padding-bottom: 0 !important;
+        }
     }
 }

@@ -11,4 +11,7 @@
 }
 .wp-site-blocks > header ul {
   flex-direction: column;
+}
+.wp-site-blocks > header ul a {
+  padding-bottom: 0 !important;
 }/*# sourceMappingURL=header.css.map */
