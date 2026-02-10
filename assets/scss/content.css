@@ -71,7 +71,8 @@
 }
 .wp-site-blocks > main .mmsi-feature .mmsi-feature__media img {
   height: 100%;
-  max-width: none;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -o-object-fit: fill !important;
      object-fit: fill !important;
   display: block;
