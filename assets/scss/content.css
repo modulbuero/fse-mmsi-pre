@@ -23,9 +23,7 @@
   /*Editor-Content*/
   /*Buttons*/
   /* Animated Card */
-  /* =========================
-     Mobile layout: image top, text bottom
-     ========================= */
+  /* Mobile layout */
 }
 @media (min-width: 600px) {
   .wp-site-blocks > main .entry-content {
@@ -158,10 +156,12 @@
   pointer-events: none;
   display: none;
 }
-@media (max-width: 1023px) {
+@media (max-width: 600px) {
   .wp-site-blocks > main .mmsi-feature {
     height: auto;
     overflow: visible;
+    background-color: transparent !important;
+    margin-bottom: 64px !important;
     /* On mobile ignore "collapsed" toggling */
   }
   .wp-site-blocks > main .mmsi-feature > .wp-block-columns {
@@ -251,17 +251,30 @@
 }
 
 body {
-  --mbfse--margin-bottom-block: 120px;
+  --mbfse--margin-bottom-block: 60px;
   /*Fonts*/
-  --wp--preset--font-size--large:28px;
-  --wp--preset--font-size--medium:18px;
+  --wp--preset--font-size--large:22px;
+  --wp--preset--font-size--medium:16px;
   --wp--preset--font-size--small:16px;
   --wp--preset--font-size--xs:15px;
   /*  Global font defaults  */
 }
+@media (min-width: 600px) {
+  body {
+    --mbfse--margin-bottom-block: 120px;
+    /*Fonts*/
+    --wp--preset--font-size--large:28px;
+    --wp--preset--font-size--medium:18px;
+  }
+}
 body h2 {
   font-size: var(--wp--preset--font-size--large);
-  line-height: 34px !important;
+  line-height: 26px !important;
+}
+@media (min-width: 600px) {
+  body h2 {
+    line-height: 34px !important;
+  }
 }
 body h3 {
   font-size: var(--wp--preset--font-size--large);
