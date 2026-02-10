@@ -5,9 +5,12 @@
 .wp-site-blocks {
     margin-top: 0;
     align-items: flex-start;
-    flex-direction: row;
+    @media (min-width: 600px) {
+         flex-direction: row;
+    }
     flex-wrap: wrap;
     padding-top: 40px !important;
+
 
     > main{
         flex-basis:70%;
@@ -16,9 +19,13 @@
         margin-block-start: 0;
         margin-top: 0;
         padding-bottom: 0;
-        .entry-content {
-          padding-right: 120px;
+        @media (min-width: 600px) {
+          .entry-content {
+            background-color: red;
+            padding-right: 120px;
+          }
         }
+       
         /*Editor-Content*/
         .medium-p {
           font-size: var(--wp--preset--font-size--medium);
@@ -71,6 +78,7 @@
     img{
       height: 100%;
       max-width: max-content;
+      width: auto !important;
       object-fit: fill !important;
       display: block;
       cursor: pointer;
@@ -155,6 +163,7 @@
       .mmsi-feature__close{
         display: none;
       }
+      
     }
     .mmsi-feature__text{
       opacity: 0;
@@ -164,6 +173,72 @@
     }
   }
 }
+
+/* =========================
+   Mobile layout: image top, text bottom
+   ========================= */
+@media (max-width: 1023px){
+  .mmsi-feature{
+    height: auto;
+    overflow: visible;
+
+    > .wp-block-columns{
+      height: auto;
+      flex-direction: column !important;
+    }
+
+    .mmsi-feature__media{
+      flex: 0 0 auto;
+      max-width: 100%;
+      width: 100%;
+      height: clamp(220px, 55vw, 360px);
+      &::after{
+        opacity: 0 !important;
+      }
+      .mmsi-feature__close{
+        display: none !important;
+      }
+      figure,
+      .wp-block-image{
+        width: 100%;
+      }
+
+      img{
+        width: 100% !important;
+        max-width: 100% !important;
+        object-fit: cover !important;
+      }
+    }
+
+    .mmsi-feature__text{
+      flex: 0 0 auto;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+
+      display: block;
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
+    }
+
+    /* On mobile ignore "collapsed" toggling */
+    &.is-collapsed{
+      .mmsi-feature__media{
+        flex: 0 0 auto;
+        max-width: 100%;
+      }
+
+      .mmsi-feature__text{
+        display: block;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
 
 
 .nf-form-cont {

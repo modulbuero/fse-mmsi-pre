@@ -5,9 +5,13 @@
 .wp-site-blocks {
   margin-top: 0;
   align-items: flex-start;
-  flex-direction: row;
   flex-wrap: wrap;
   padding-top: 40px !important;
+}
+@media (min-width: 600px) {
+  .wp-site-blocks {
+    flex-direction: row;
+  }
 }
 .wp-site-blocks > main {
   flex-basis: 70%;
@@ -19,9 +23,15 @@
   /*Editor-Content*/
   /*Buttons*/
   /* Animated Card */
+  /* =========================
+     Mobile layout: image top, text bottom
+     ========================= */
 }
-.wp-site-blocks > main .entry-content {
-  padding-right: 120px;
+@media (min-width: 600px) {
+  .wp-site-blocks > main .entry-content {
+    background-color: red;
+    padding-right: 120px;
+  }
 }
 .wp-site-blocks > main .medium-p {
   font-size: var(--wp--preset--font-size--medium);
@@ -73,6 +83,7 @@
   height: 100%;
   max-width: -moz-max-content;
   max-width: max-content;
+  width: auto !important;
   -o-object-fit: fill !important;
      object-fit: fill !important;
   display: block;
@@ -147,6 +158,59 @@
   transform: translateX(16px);
   pointer-events: none;
   display: none;
+}
+@media (max-width: 1023px) {
+  .wp-site-blocks > main .mmsi-feature {
+    height: auto;
+    overflow: visible;
+    /* On mobile ignore "collapsed" toggling */
+  }
+  .wp-site-blocks > main .mmsi-feature > .wp-block-columns {
+    height: auto;
+    flex-direction: column !important;
+  }
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__media {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    height: clamp(220px, 55vw, 360px);
+  }
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__media::after {
+    opacity: 0 !important;
+  }
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__media .mmsi-feature__close {
+    display: none !important;
+  }
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__media figure,
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__media .wp-block-image {
+    width: 100%;
+  }
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__media img {
+    width: 100% !important;
+    max-width: 100% !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+  .wp-site-blocks > main .mmsi-feature .mmsi-feature__text {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+  .wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__text {
+    display: block;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
 }
 .wp-site-blocks > main .nf-form-cont {
   padding: 50px 90px;
