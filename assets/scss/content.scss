@@ -21,7 +21,6 @@
         padding-bottom: 0;
         @media (min-width: 600px) {
           .entry-content {
-            background-color: red;
             padding-right: 120px;
           }
         }
@@ -242,7 +241,9 @@
 
 
 .nf-form-cont {
-  padding: 50px 90px;
+  @media (min-width: 600px) {
+        padding: 50px 90px;
+  }
   .nf-form-title {
     display: none;
   }
