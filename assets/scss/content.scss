@@ -1,5 +1,5 @@
 :root {
-    --wp--style--global--content-size: 1066px;
+    --wp--style--global--content-size: 900px;
 }
 
 .wp-site-blocks {
@@ -17,10 +17,18 @@
         margin-block-start: 0;
         margin-top: 0;
         padding-bottom: 0;
+        
+        .wp-block-group {
+          margin-left: 0 !important;
+        }
 
         @media (min-width: 600px) {
           .entry-content {
-            padding-right: 120px;
+            padding-left: 0 !important;
+            .wp-block-cover {
+              margin-left: 0 !important;
+              padding-left: 0 !important;
+            }
           }
         }
         @media (max-width: 600px) {
@@ -52,10 +60,12 @@
 
 /* Animated Card */ 
 .mmsi-feature{
-  height: clamp(260px, 28vw, 420px);
+  height: clamp(260px, 28vw, 500px);
   overflow: hidden;
   gap: 0 !important;
   padding: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
 
   > .wp-block-columns{
     height: 100%;
@@ -77,16 +87,16 @@
       height: 100%;
       margin: 0 !important;
       display: flex;
-      align-items: center;
-      justify-content: center;
       max-width: unset !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100%;
     }
 
     img{
       height: 100%;
-      max-width: max-content;
+      max-width: unset !important;
       width: auto !important;
-      object-fit: fill !important;
       display: block;
       cursor: pointer;
     }
@@ -162,6 +172,11 @@
       flex: 1 1 100%;
       max-width: 100%;
 
+      img{
+        height: 100%;
+        width: 100% !important;
+    }
+
       /* Remove overlay */
       &::after{
         opacity: 0;
@@ -213,7 +228,7 @@
       img{
         width: 100% !important;
         max-width: 100% !important;
-        object-fit: cover !important;
+        // object-fit: cover !important;
       }
     }
 

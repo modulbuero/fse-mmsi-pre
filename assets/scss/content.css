@@ -1,5 +1,5 @@
 :root {
-  --wp--style--global--content-size: 1066px;
+  --wp--style--global--content-size: 900px;
 }
 
 .wp-site-blocks {
@@ -26,9 +26,16 @@
   /* Mobile layout for Animated Card */
   /* Contact */
 }
+.wp-site-blocks > main .wp-block-group {
+  margin-left: 0 !important;
+}
 @media (min-width: 600px) {
   .wp-site-blocks > main .entry-content {
-    padding-right: 120px;
+    padding-left: 0 !important;
+  }
+  .wp-site-blocks > main .entry-content .wp-block-cover {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   }
 }
 @media (max-width: 600px) {
@@ -53,10 +60,12 @@
   color: var(--wp--preset--color--secondary);
 }
 .wp-site-blocks > main .mmsi-feature {
-  height: clamp(260px, 28vw, 420px);
+  height: clamp(260px, 28vw, 500px);
   overflow: hidden;
   gap: 0 !important;
   padding: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
   /* image */
   /* text */
   /* COLLAPSED STATE */
@@ -81,17 +90,15 @@
   height: 100%;
   margin: 0 !important;
   display: flex;
-  align-items: center;
-  justify-content: center;
   max-width: unset !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
 }
 .wp-site-blocks > main .mmsi-feature .mmsi-feature__media img {
   height: 100%;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  max-width: unset !important;
   width: auto !important;
-  -o-object-fit: fill !important;
-     object-fit: fill !important;
   display: block;
   cursor: pointer;
 }
@@ -153,6 +160,10 @@
   max-width: 100%;
   /* Remove overlay */
 }
+.wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media img {
+  height: 100%;
+  width: 100% !important;
+}
 .wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media::after {
   opacity: 0;
 }
@@ -196,8 +207,6 @@
   .wp-site-blocks > main .mmsi-feature .mmsi-feature__media img {
     width: 100% !important;
     max-width: 100% !important;
-    -o-object-fit: cover !important;
-       object-fit: cover !important;
   }
   .wp-site-blocks > main .mmsi-feature .mmsi-feature__text {
     flex: 0 0 auto;
