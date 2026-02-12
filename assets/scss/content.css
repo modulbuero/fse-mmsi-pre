@@ -30,6 +30,11 @@
     padding-right: 120px;
   }
 }
+@media (max-width: 600px) {
+  .wp-site-blocks > main p {
+    text-align: left !important;
+  }
+}
 .wp-site-blocks > main .medium-p {
   font-size: var(--wp--preset--font-size--medium);
   line-height: 26px !important;

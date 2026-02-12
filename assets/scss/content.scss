@@ -24,6 +24,11 @@
             padding-right: 120px;
           }
         }
+        @media (max-width: 600px) {
+          p {
+            text-align: left !important;
+          }
+        }
        
         /*Editor-Content*/
         .medium-p {
