@@ -88,16 +88,11 @@
 				"border": {
 					"radius": "5px"
 				}
-			},
-			"heading": {
-				"typography": {
-					"fontFamily":"var(--wp--preset--font-family--calibri)"
-				}
 			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--calibri)",
-			"lineHeight": "1.5"
+			"lineHeight": "22px"
 		}
 	}
 }
