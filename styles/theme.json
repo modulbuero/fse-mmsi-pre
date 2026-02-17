@@ -48,36 +48,36 @@
 				{
 				"fontFace": [
 					{
-						"fontFamily": "Calibri",
+						"fontFamily": "Inter, sans-serif",
 						"fontStretch": "normal",
 						"fontStyle": "normal",
 						"fontWeight": "400",
 						"src": [
-							"file:./assets/fonts/Calibri/Calibri.ttf"
+							"file:./assets/fonts/Inter_18pt-Regular.ttf"
 						]
 					},
 					{
-						"fontFamily": "Calibri-Italic",
+						"fontFamily": "Inter, sans-serif",
 						"fontStretch": "normal",
 						"fontStyle": "italic",
 						"fontWeight": "400",
 						"src": [
-							"file:./assets/fonts/Calibri/Calibri-Italic.ttf"
+							"file:./assets/fonts/Inter_18pt-Regular.ttf"
 						]
 					},
 					{
-						"fontFamily": "Calibri-Bold",
+						"fontFamily": "Inter, sans-serif",
 						"fontStretch": "normal",
 						"fontStyle": "normal",
 						"fontWeight": "700",
 						"src": [
-							"file:./assets/fonts/Calibri/Calibri-Bold.ttf"
+							"file:./assets/fonts/Inter_18pt-Regular.ttf"
 						]
 					}
 				],
-				"fontFamily": "\"Calibri\", sans-serif",
-				"name": "Calibri",
-				"slug": "calibri"
+				"fontFamily": "\"Inter\", sans-serif",
+				"name": "Inter",
+				"slug": "Inter"
 				}
 			]
 		}
@@ -91,7 +91,6 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--calibri)",
 			"lineHeight": "22px"
 		}
 	}
