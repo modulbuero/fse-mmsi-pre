@@ -59,11 +59,13 @@
         .wp-block-button__link {
             font-size: var(--wp--preset--font-size--xs);
             line-height: 18px !important;
-            background-color: var(--wp--preset--color--secondary);
+            background-color: #F5F5F5;
+            color : var(--wp--preset--color--secondary);
+            border: 2px solid var(--wp--preset--color--secondary);
+        
             &:hover {
-              background-color: #F5F5F5;
-              color : var(--wp--preset--color--secondary);
-
+              background-color: var(--wp--preset--color--secondary);
+              color : var(--wp--preset--color--base);
             }
         }
 
@@ -284,10 +286,16 @@
   }
   input[type="submit"] {
     width: 100%;
-    border: none;
-    background: var(--wp--preset--color--secondary);
-    color: var(--wp--preset--color--base);
     height: 45px;
+    font-size: var(--wp--preset--font-size--xs);
+    line-height: 18px !important;
+    background-color: #F5F5F5;
+    color : var(--wp--preset--color--secondary);
+    border: 2px solid var(--wp--preset--color--secondary);
+    &:hover {
+        background-color: var(--wp--preset--color--secondary);
+        color : var(--wp--preset--color--base);
+    }
   }
   .nf-field-container {
     margin-bottom: 50px !important;
