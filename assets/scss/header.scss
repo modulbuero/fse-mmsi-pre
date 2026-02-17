@@ -28,21 +28,28 @@
         }
     }
 
-    .parts-header > div {
+    .parts-header {
+        position: fixed;
+        left: 120px;
+
+        > div {
         flex-direction: column;
          @media (max-width: 600px) {
             display: flex;
             flex-direction: row;
             width: 100%;
             align-items: flex-start;
+         }
         }
-        
     }
+        
+    
 
     ul {
         flex-direction: column;
         a {
             padding-bottom: 0 !important;
+            font-weight: bold;
         }
     }
     

@@ -26,6 +26,10 @@
 .wp-site-blocks > header .wp-block-navigation-item.current-menu-item .wp-block-navigation-item__label {
   padding-left: 15px;
 }
+.wp-site-blocks > header .parts-header {
+  position: fixed;
+  left: 120px;
+}
 .wp-site-blocks > header .parts-header > div {
   flex-direction: column;
 }
@@ -42,6 +46,7 @@
 }
 .wp-site-blocks > header ul a {
   padding-bottom: 0 !important;
+  font-weight: bold;
 }
 @media (max-width: 600px) {
   .wp-site-blocks > header > div nav .wp-block-navigation__responsive-container {
