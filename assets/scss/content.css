@@ -31,9 +31,14 @@
     padding-left: 0 !important;
   }
 }
+.wp-site-blocks > main {
+  /*p Style*/
+}
 @media (max-width: 600px) {
   .wp-site-blocks > main p {
     text-align: left !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 .wp-site-blocks > main .wp-block-post-content > *:last-child {

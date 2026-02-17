@@ -2,10 +2,12 @@
     position: relative;
     background-color: var(--wp--preset--color--base);
     min-height: 100vh;
+
     @media (max-width: 600px) {
         min-height: unset;
         margin-bottom: 60px !important;
     }
+    
     justify-content: center;
     flex-basis:30%;
     align-items: flex-end;

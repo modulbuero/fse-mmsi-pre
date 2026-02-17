@@ -26,9 +26,13 @@
             }
           }
         }
+
+        /*p Style*/
         @media (max-width: 600px) {
           p {
             text-align: left !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
           }
         }
 
