@@ -18,6 +18,10 @@
         margin-top: 0;
         padding-bottom: 0;
 
+        .wp-block-post-content > *:last-child {
+          margin-bottom: 120px !important;
+        }
+
         @media (min-width: 600px) {
           .entry-content {
             padding-left: 0 !important;
@@ -31,14 +35,20 @@
         @media (max-width: 600px) {
           p {
             text-align: left !important;
+          }
+        }
+        @media (max-width: 1440px) {
+          p {
             padding-left: 0 !important;
             padding-right: 0 !important;
           }
         }
-
-        .wp-block-post-content > *:last-child {
-          margin-bottom: 120px !important;
-        }
+        @media (min-width: 1441px) {
+          .main-title {
+            padding-left: 80px !important;
+            padding-right: 80px !important;
+          }
+         }
        
         /*Editor-Content*/
         .medium-p {
