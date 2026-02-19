@@ -2,6 +2,7 @@
     position: relative;
     background-color: var(--wp--preset--color--base);
     min-height: 100vh;
+    z-index: 2000;
 
     @media (max-width: 600px) {
         min-height: unset;
@@ -31,15 +32,18 @@
     .parts-header {
         position: fixed;
         left: 120px;
+        @media (max-width: 600px) {
+            left: 0;
+        }
 
         > div {
         flex-direction: column;
-         @media (max-width: 600px) {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            align-items: flex-start;
-         }
+         /* hide logo mobile */
+        > div {
+             @media (max-width: 600px) {
+                display: none;
+            } 
+          }
         }
     }
         
@@ -59,6 +63,10 @@
             .wp-block-navigation__responsive-container{
                     width: 100vw !important;
                     background-color: var(--wp--preset--color--base);
+                    padding-left: 0 !important;
+                    .wp-block-navigation__responsive-container-close {
+                        top: 0 !important;
+                    }
              }
         }
         }
