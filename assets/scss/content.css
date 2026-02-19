@@ -306,6 +306,9 @@
   margin: 0;
   z-index: 1000;
 }
+.wp-site-blocks > main .nf-form-cont .nf-field-label > label {
+  font-weight: normal !important;
+}
 .wp-site-blocks > main .nf-form-cont .nf-field:focus-within .nf-field-label {
   top: -20px;
   transform: translateY(0);

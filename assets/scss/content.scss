@@ -309,6 +309,10 @@
     transition: all .25s ease;
     margin: 0;
     z-index: 1000;
+    >label {
+      font-weight: normal !important;
+    }
+    
   }
   .nf-field:focus-within .nf-field-label{
       top: -20px;
