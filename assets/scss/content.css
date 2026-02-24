@@ -6,7 +6,7 @@
   margin-top: 0;
   align-items: flex-start;
 }
-@media (min-width: 600px) {
+@media (min-width: 769px) {
   .wp-site-blocks {
     flex-direction: row;
   }
@@ -26,7 +26,7 @@
 .wp-site-blocks > main .wp-block-post-content > *:last-child {
   margin-bottom: 120px !important;
 }
-@media (min-width: 600px) {
+@media (min-width: 769px) {
   .wp-site-blocks > main .entry-content {
     padding-left: 0 !important;
   }
@@ -35,7 +35,7 @@
     padding-right: 40px !important;
   }
 }
-@media (min-width: 600px) and (min-width: 600px) {
+@media (min-width: 769px) and (min-width: 600px) {
   .wp-site-blocks > main .entry-content .wp-block-cover {
     padding-left: 135px !important;
     padding-right: 135px !important;
@@ -49,13 +49,13 @@
     text-align: left !important;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .wp-site-blocks > main p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 769px) {
   .wp-site-blocks > main .main-title {
     padding-left: 80px !important;
     padding-right: 80px !important;
@@ -216,7 +216,7 @@
 .wp-site-blocks > main {
   /* Mobile layout for Animated Card */
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .wp-site-blocks > main .mmsi-feature {
     height: auto;
     overflow: visible;

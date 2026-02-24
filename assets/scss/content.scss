@@ -5,7 +5,7 @@
 .wp-site-blocks {
     margin-top: 0;
     align-items: flex-start;
-    @media (min-width: 600px) {
+    @media (min-width: 769px) {
          flex-direction: row;
     }
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
           margin-bottom: 120px !important;
         }
 
-        @media (min-width: 600px) {
+        @media (min-width: 769px) {
           .entry-content {
             padding-left: 0 !important;
             .wp-block-cover {
@@ -42,13 +42,13 @@
             text-align: left !important;
           }
         }
-        @media (max-width: 1440px) {
+        @media (max-width: 768px) {
           p {
             padding-left: 0 !important;
             padding-right: 0 !important;
           }
         }
-        @media (min-width: 1441px) {
+        @media (min-width: 769px) {
           .main-title {
             padding-left: 80px !important;
             padding-right: 80px !important;
@@ -212,7 +212,7 @@
 }
 
 /* Mobile layout for Animated Card */
-@media (max-width: 600px){
+@media (max-width: 768px){
   .mmsi-feature{
     height: auto;
     overflow: visible;
