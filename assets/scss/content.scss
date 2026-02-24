@@ -302,9 +302,6 @@
         color : var(--wp--preset--color--base);
     }
   }
-  .nf-field-container {
-    margin-bottom: 50px !important;
-  }
   .nf-field-label{
     position: absolute;
     top: 50%;
@@ -319,11 +316,12 @@
     }
     
   }
-  .nf-field:focus-within .nf-field-label{
-      top: -20px;
-      transform: translateY(0);
-      font-size: 12px;
-  }
+  .nf-field:focus-within .nf-field-label,
+.nf-field.has-value .nf-field-label {
+  top: -20px;
+  transform: translateY(0);
+  font-size: 12px;
+}
   }
   }
 

@@ -300,9 +300,6 @@
   background-color: var(--wp--preset--color--secondary);
   color: var(--wp--preset--color--base);
 }
-.wp-site-blocks > main .nf-form-cont .nf-field-container {
-  margin-bottom: 50px !important;
-}
 .wp-site-blocks > main .nf-form-cont .nf-field-label {
   position: absolute;
   top: 50%;
@@ -316,7 +313,8 @@
 .wp-site-blocks > main .nf-form-cont .nf-field-label > label {
   font-weight: normal !important;
 }
-.wp-site-blocks > main .nf-form-cont .nf-field:focus-within .nf-field-label {
+.wp-site-blocks > main .nf-form-cont .nf-field:focus-within .nf-field-label,
+.wp-site-blocks > main .nf-form-cont .nf-field.has-value .nf-field-label {
   top: -20px;
   transform: translateY(0);
   font-size: 12px;
