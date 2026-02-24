@@ -31,7 +31,7 @@
   position: fixed;
   left: 120px;
 }
-@media (max-width: 14400px) {
+@media (max-width: 1440px) {
   .wp-site-blocks > header .parts-header {
     left: 0;
   }
