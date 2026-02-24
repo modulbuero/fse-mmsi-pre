@@ -2,7 +2,6 @@
 .wp-site-blocks > header {
   position: relative;
   background-color: var(--wp--preset--color--base);
-  min-height: 100vh;
   z-index: 2000;
 }
 @media (max-width: 768px) {
