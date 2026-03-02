@@ -97,6 +97,7 @@
   height: 100%;
   align-items: stretch;
   margin: 0;
+  gap: 0 !important;
 }
 .wp-site-blocks > main .mmsi-feature {
   /* image */
@@ -178,10 +179,8 @@
   /* text */
 }
 .wp-site-blocks > main .mmsi-feature .mmsi-feature__text {
-  flex: 0 0 30%;
-  max-width: 30%;
-  height: 100%;
-  min-width: 0;
+  width: 100%;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
