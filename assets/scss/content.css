@@ -1,5 +1,5 @@
 :root {
-  --wp--style--global--content-size: 900px;
+  --wp--style--global--content-size: 1066px;
 }
 
 .wp-site-blocks {
@@ -86,7 +86,7 @@
   /* Animated Card */
 }
 .wp-site-blocks > main .mmsi-feature {
-  height: clamp(260px, 28vw, 500px);
+  height: auto;
   overflow: hidden;
   gap: 0 !important;
   padding: 0 !important;
@@ -327,8 +327,8 @@ body {
 }
 @media (min-width: 1441px) {
   body {
-    --wp--style--root--padding-right: 150px !important;
-    --wp--style--root--padding-left: 150px !important;
+    --wp--style--root--padding-right: 40px !important;
+    --wp--style--root--padding-left: 40px !important;
   }
 }
 @media (min-width: 600px) {
