@@ -192,12 +192,6 @@
 .wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media {
   flex: 1 1 100%;
   max-width: 100%;
-}
-.wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media img {
-  height: 100%;
-  width: 100% !important;
-}
-.wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media {
   /* Remove overlay */
 }
 .wp-site-blocks > main .mmsi-feature.is-collapsed .mmsi-feature__media::after {
