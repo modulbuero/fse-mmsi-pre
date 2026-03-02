@@ -332,12 +332,18 @@
 
 body {
   --mbfse--margin-bottom-block: 60px;
+  
   /*Fonts*/
   --wp--preset--font-size--xl:22px;
   --wp--preset--font-size--large:22px;
   --wp--preset--font-size--medium:16px;
   --wp--preset--font-size--small:16px;
   --wp--preset--font-size--xs:15px;
+
+  @media (min-width: 1441px) {
+    --wp--style--root--padding-right: 150px !important;
+    --wp--style--root--padding-left: 150px !important;
+  }
 
   @media (min-width: 600px) {
       --mbfse--margin-bottom-block: 120px;

@@ -18,8 +18,8 @@
             gap: 50px !important;
             @media (min-width: 600px) {
                 flex-direction: row;
-                padding-left: 150px;
-                padding-right: 150px;
+                padding-left: var(--wp--style--root--padding-right);
+                padding-right: var(--wp--style--root--padding-right);
             }
             li a span {
             color: var(--wp--preset--color--base) !important;
