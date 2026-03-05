@@ -9,8 +9,11 @@
     }
     
     justify-content: center;
-    flex-basis:30%;
+    width: 300px;
     align-items: flex-end;
+    >div {
+        padding: 0 !important;
+    }
 
     /* Selected menu */
     .wp-block-navigation-item {
@@ -30,9 +33,6 @@
 
     .parts-header {
         position: fixed;
-        @media (max-width: 1440px) {
-            left: 0;
-        }
 
         > div {
         flex-direction: column;
@@ -44,8 +44,6 @@
           }
         }
     }
-        
-    
 
     ul {
         flex-direction: column;
