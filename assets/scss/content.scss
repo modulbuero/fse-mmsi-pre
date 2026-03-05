@@ -23,8 +23,11 @@
         margin-top: 0;
         padding-bottom: 0;
         max-width: var(--wp--style--global--content-size);
+        @media (min-width: 1024px) and (max-width: 1400px) {
+          max-width: 800px;
+        }
         @media (max-width: 1024px) {
-          max-width: 700px;
+          max-width: 600px;
         }
         .wp-block-post-content > *:last-child {
           margin-bottom: 120px !important;
@@ -119,9 +122,12 @@
 
     img{
       height: 100%;
-      max-width: 1066px !important;
+      max-width: var(--wp--style--global--content-size) !important;
+      @media (min-width: 1024px) and (max-width: 1400px) {
+          max-width: 800px !important;
+      }
       @media (max-width: 1024px) {
-          max-width: 700px !important;
+          max-width: 600px !important;
       }
       width: auto !important;
       display: block;
