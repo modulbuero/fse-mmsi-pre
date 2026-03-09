@@ -1,9 +1,7 @@
 :root {
+    --wp--style--global--content-size: 1066px;
     @media (min-width: 900px) and (max-width: 1200px) {
         --wp--style--global--content-size: 750px;
-    }
-    @media (min-width: 1200px) {
-        --wp--style--global--content-size: 1066px;
     }
 }
 
