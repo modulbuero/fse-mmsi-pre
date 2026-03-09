@@ -35,7 +35,7 @@
         position: fixed;
         > div {
         flex-direction: column;
-         /* logo display */
+         /* logo desktop, tablet and mobile display */
         > div {
             @media (min-width: 951px) and (max-width: 1199px) {
                 img {
@@ -59,7 +59,7 @@
         a {
             padding-bottom: 0 !important;
             font-weight: bold;
-            
+             /* desktop, tablet and mobile display */
             @media (min-width: 768px) and (max-width: 951px) {
                 font-size: 10px;
             }
