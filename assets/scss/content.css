@@ -16,29 +16,14 @@
   flex-wrap: wrap;
   padding-top: 40px !important;
 }
-@media (min-width: 1441px) {
-  .wp-site-blocks {
-    gap: 140px;
-  }
-}
 .wp-site-blocks > main {
-  flex-basis: 70%;
+  width: 70%;
   min-height: 100vh;
   justify-content: center;
   margin-block-start: 0;
   margin-top: 0;
   padding-bottom: 0;
   max-width: var(--wp--style--global--content-size);
-}
-@media (min-width: 1024px) and (max-width: 1400px) {
-  .wp-site-blocks > main {
-    max-width: 800px;
-  }
-}
-@media (max-width: 1024px) {
-  .wp-site-blocks > main {
-    max-width: 600px;
-  }
 }
 .wp-site-blocks > main .wp-block-post-content > *:last-child {
   margin-bottom: 120px !important;
