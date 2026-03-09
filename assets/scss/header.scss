@@ -1,16 +1,19 @@
 .wp-site-blocks > header{
+    --mbfse--menu-close-fixer: -60px;
+
     position: relative;
     background-color: var(--wp--preset--color--base);
     z-index: 2000;
     width: 20%;
+    justify-content: center;
+    align-items: flex-end;
 
     @media (max-width: 768px) {
         min-height: unset;
         margin-bottom: 60px !important;
     }
     
-    justify-content: center;
-    align-items: flex-end;
+    
     >div {
         padding: 0 !important;
     }
@@ -28,6 +31,9 @@
             .wp-block-navigation-item__label {
                 padding-left: 15px;
             }
+        }
+        .wp-block-navigation-item__label {
+            text-transform: uppercase;
         }
     }
 
@@ -51,6 +57,10 @@
                 display: none;
             } 
           }
+        }
+
+        @media (max-width: 768px) {
+            right: 0;
         }
     }
 
@@ -77,15 +87,15 @@
     @media (max-width: 768px){
         >div {
             nav{
-            .wp-block-navigation__responsive-container{
-                    width: 100vw !important;
-                    background-color: var(--wp--preset--color--base);
-                    padding-left: 0 !important;
-                    .wp-block-navigation__responsive-container-close {
-                        top: 0 !important;
-                    }
-             }
-        }
+                .wp-block-navigation__responsive-container{
+                        width: 100vw !important;
+                        background-color: var(--wp--preset--color--base);
+                        padding-left: 0 !important;
+                        .wp-block-navigation__responsive-container-close {
+                            right: 0
+                        }
+                }
+            }
         }
     }
 

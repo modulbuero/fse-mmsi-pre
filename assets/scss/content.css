@@ -19,7 +19,7 @@
 }
 .wp-site-blocks {
   flex-wrap: wrap;
-  padding-top: 40px !important;
+  padding-top: 40px;
 }
 .wp-site-blocks > main {
   width: 100%;
@@ -39,16 +39,6 @@
   }
   .wp-site-blocks > main .entry-content {
     padding-left: 0 !important;
-  }
-  .wp-site-blocks > main .entry-content .wp-block-cover {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-}
-@media (min-width: 769px) and (min-width: 600px) {
-  .wp-site-blocks > main .entry-content .wp-block-cover {
-    padding-left: 135px !important;
-    padding-right: 135px !important;
   }
 }
 .wp-site-blocks > main {
@@ -91,6 +81,26 @@
 .wp-site-blocks > main .wp-block-button__link:hover {
   background-color: var(--wp--preset--color--secondary);
   color: var(--wp--preset--color--base);
+}
+.wp-site-blocks > main {
+  /*Cover Hero*/
+}
+.wp-site-blocks > main .wp-block-cover {
+  padding: 80px;
+}
+.wp-site-blocks > main .wp-block-cover .wp-block-cover__inner-container .wp-block-image.aligncenter {
+  margin-bottom: 40px;
+}
+.wp-site-blocks > main .wp-block-cover .wp-block-cover__inner-container .wp-block-image.aligncenter img {
+  animation: rotate 12s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .wp-site-blocks > main {
   /* Animated Card */

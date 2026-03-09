@@ -13,7 +13,7 @@
          justify-content: center;
     }
     flex-wrap: wrap;
-    padding-top: 40px !important;
+    padding-top: 40px;
    
     > main{
         width: 100%;
@@ -32,14 +32,6 @@
           width: 70%;
           .entry-content {
             padding-left: 0 !important;
-            .wp-block-cover {
-              padding-left: 40px !important;
-              padding-right: 40px !important;
-              @media (min-width: 600px) {
-                padding-left: 135px !important;
-                padding-right: 135px !important;
-              }
-            }
           }
         }
 
@@ -79,6 +71,28 @@
               background-color: var(--wp--preset--color--secondary);
               color : var(--wp--preset--color--base);
             }
+        }
+
+        /*Cover Hero*/
+        .wp-block-cover{
+          padding: 80px;
+            .wp-block-cover__inner-container{
+              
+            .wp-block-image.aligncenter {
+              margin-bottom:40px;
+              img{
+                animation: rotate 12s linear infinite;
+              }
+            }
+            @keyframes rotate {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+              }
+            }
+          }
         }
 
 /* Animated Card */ 

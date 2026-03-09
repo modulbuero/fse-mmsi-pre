@@ -85,11 +85,7 @@
 			]
 		}
 	},
-	"patterns": [
-		"fse-memysafe-customer/get-user-name",
-		"fse-memysafe-customer/user-dashboard",
-		"fse-memysafe-customer/user-settings"
-	],
+	
 	"styles": {
 		"elements": {
 			"button": {
