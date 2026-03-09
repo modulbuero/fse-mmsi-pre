@@ -37,12 +37,12 @@
         flex-direction: column;
          /* logo display */
         > div {
-            @media (min-width: 900px) and (max-width: 1200px) {
+            @media (min-width: 951px) and (max-width: 1199px) {
                 img {
                     width: 150px;
                 }
             }
-            @media (min-width: 768px) and (max-width: 900px) {
+            @media (min-width: 768px) and (max-width: 951px) {
                 img {
                     width: 120px;
                 }
@@ -60,11 +60,11 @@
             padding-bottom: 0 !important;
             font-weight: bold;
             
-            @media (min-width: 768px) and (max-width: 900px) {
+            @media (min-width: 768px) and (max-width: 951px) {
                 font-size: 10px;
             }
 
-            @media (min-width: 900px) and (max-width: 1200px) {
+            @media (min-width: 952px) and (max-width: 1200px) {
                 font-size: 12px;
             }
         

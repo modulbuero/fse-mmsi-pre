@@ -1,5 +1,10 @@
 :root {
-    --wp--style--global--content-size: 1066px;
+    @media (min-width: 900px) and (max-width: 1200px) {
+        --wp--style--global--content-size: 750px;
+    }
+    @media (min-width: 1200px) {
+        --wp--style--global--content-size: 1066px;
+    }
 }
 
 .wp-site-blocks {
@@ -13,7 +18,7 @@
     padding-top: 40px !important;
    
     > main{
-        width: 70%;
+        width: 100%;
         min-height: 100vh;
         justify-content: center;
         margin-block-start: 0;
@@ -26,6 +31,7 @@
         }
 
         @media (min-width: 769px) {
+          width: 70%;
           .entry-content {
             padding-left: 0 !important;
             .wp-block-cover {
@@ -115,12 +121,7 @@
     img{
       height: 100%;
       max-width: var(--wp--style--global--content-size) !important;
-      @media (min-width: 1024px) and (max-width: 1400px) {
-          max-width: 800px !important;
-      }
-      @media (max-width: 1024px) {
-          max-width: 600px !important;
-      }
+     
       width: auto !important;
       display: block;
       cursor: pointer;
@@ -180,7 +181,10 @@
   /* text */
   .mmsi-feature__text{
     width: 100%;
-    padding: 50px;
+    padding: 20px 0 0 0;
+    @media (min-width: 769px) {
+       padding: 50px;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
