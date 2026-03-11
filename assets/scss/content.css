@@ -385,4 +385,11 @@ body h3 {
 }
 body p {
   font-size: var(--wp--preset--font-size--small);
+}
+
+body.about .wp-block-post-content .wp-block-group.has-background {
+  padding: var(--wp--style--root--padding-left);
+}
+body.about .wp-block-post-content .wp-block-group.has-background p {
+  padding: 0;
 }/*# sourceMappingURL=content.css.map */

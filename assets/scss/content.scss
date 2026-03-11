@@ -389,3 +389,14 @@ body {
 	  font-size: var(--wp--preset--font-size--small);
   }
 }
+
+body.about{
+  .wp-block-post-content{
+    .wp-block-group.has-background{
+      padding: var(--wp--style--root--padding-left);
+      p{
+        padding:0;
+      }
+    }
+  }
+}
