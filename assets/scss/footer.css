@@ -1,37 +1,26 @@
 .wp-site-blocks > footer {
-  width: 100% !important;
-  background-color: var(--wp--preset--color--secondary) !important;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.wp-site-blocks > footer > div {
-  padding: 0 !important;
+  --mbfse--padding-footer:0;
+  width: 100%;
+  background-color: var(--wp--preset--color--secondary);
+  padding: 15px 40px;
+  box-sizing: border-box;
 }
 .wp-site-blocks > footer > div > div {
-  margin: 0 !important;
-}
-.wp-site-blocks > footer > div ul {
-  justify-content: space-between;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  gap: 50px !important;
-}
-@media (min-width: 600px) {
-  .wp-site-blocks > footer > div ul {
-    flex-direction: row;
-    padding-left: var(--wp--style--root--padding-right);
-    padding-right: var(--wp--style--root--padding-right);
-  }
-}
-.wp-site-blocks > footer > div ul li a span {
-  color: var(--wp--preset--color--base) !important;
-  font-size: 10px !important;
-}
-.wp-site-blocks > footer > div nav {
-  margin: 0 !important;
-  max-width: unset !important;
-}
-.wp-site-blocks > footer > div nav > div {
   width: 100%;
+}
+.wp-site-blocks > footer > div > div li a, .wp-site-blocks > footer > div > div li p, .wp-site-blocks > footer > div > div li span,
+.wp-site-blocks > footer > div > div .mbfse-copyright a,
+.wp-site-blocks > footer > div > div .mbfse-copyright p,
+.wp-site-blocks > footer > div > div .mbfse-copyright span {
+  color: #fff;
+  font-size: 10px;
+}
+.wp-site-blocks > footer > div > div .wp-block-navigation-item__label:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+@media (max-width: 601px) {
+  .wp-site-blocks > footer > div > div {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=footer.css.map */

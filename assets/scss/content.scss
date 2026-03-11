@@ -81,7 +81,7 @@
             .wp-block-image.aligncenter {
               margin-bottom:40px;
               img{
-                animation: rotate 12s linear infinite;
+                animation: rotate 6s linear infinite;
               }
             }
             @keyframes rotate {
@@ -193,7 +193,7 @@
   /* text */
   .mmsi-feature__text{
     width: 100%;
-    padding: 20px 0 0 0;
+    padding: 40px 0 0 0;
     @media (min-width: 769px) {
        padding: 50px;
     }
@@ -348,7 +348,7 @@
 }
 
 body {
-  --mbfse--margin-bottom-block: 60px;
+  --mbfse--margin-bottom-block: 80px;
   
   /*Fonts*/
   --wp--preset--font-size--xl:22px;

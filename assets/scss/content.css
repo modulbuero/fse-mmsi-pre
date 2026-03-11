@@ -92,7 +92,7 @@
   margin-bottom: 40px;
 }
 .wp-site-blocks > main .wp-block-cover .wp-block-cover__inner-container .wp-block-image.aligncenter img {
-  animation: rotate 12s linear infinite;
+  animation: rotate 6s linear infinite;
 }
 @keyframes rotate {
   from {
@@ -200,7 +200,7 @@
 }
 .wp-site-blocks > main .mmsi-feature .mmsi-feature__text {
   width: 100%;
-  padding: 20px 0 0 0;
+  padding: 40px 0 0 0;
 }
 @media (min-width: 769px) {
   .wp-site-blocks > main .mmsi-feature .mmsi-feature__text {
@@ -344,7 +344,7 @@
 }
 
 body {
-  --mbfse--margin-bottom-block: 60px;
+  --mbfse--margin-bottom-block: 80px;
   /*Fonts*/
   --wp--preset--font-size--xl:22px;
   --wp--preset--font-size--large:22px;
