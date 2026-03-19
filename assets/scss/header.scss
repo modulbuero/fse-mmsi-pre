@@ -40,27 +40,33 @@
     .parts-header {
         position: fixed;
         > div {
-        flex-direction: column;
-         /* logo desktop, tablet and mobile display */
-        > div {
-            @media (min-width: 951px) and (max-width: 1199px) {
-                img {
-                    width: 150px;
+            flex-direction: column;
+            align-items: flex-start;
+            /* logo desktop, tablet and mobile display */
+            > div {
+                &:first-child{
+                    padding-left: var(--mbfse--menu-item-padding);
                 }
-            }
-            @media (min-width: 768px) and (max-width: 951px) {
-                img {
-                    width: 120px;
+                
+
+                @media (min-width: 951px) and (max-width: 1199px) {
+                    img {
+                        width: 150px;
+                    }
                 }
+                @media (min-width: 768px) and (max-width: 951px) {
+                    img {
+                        width: 120px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    display: none;
+                } 
             }
-            @media (max-width: 768px) {
-                display: none;
-            } 
-          }
         }
 
         @media (max-width: 768px) {
-            right: 0;
+            right: 20px;
         }
     }
 
@@ -70,15 +76,12 @@
             padding-bottom: 0 !important;
             font-weight: bold;
              /* desktop, tablet and mobile display */
-            @media (min-width: 768px) and (max-width: 951px) {
-                font-size: 10px;
-            }
-
-            @media (min-width: 952px) and (max-width: 1200px) {
+            @media (min-width: 769px) and (max-width: 1023px) {
                 font-size: 12px;
             }
-        
-            @media (min-width: 1200px) and (max-width: 1440px) {
+
+            
+            @media (min-width: 1024px) and (max-width: 1440px) {
                 font-size: 14px;
             }
         }
@@ -92,7 +95,7 @@
                         background-color: var(--wp--preset--color--base);
                         padding-left: 0 !important;
                         .wp-block-navigation__responsive-container-close {
-                            right: 0
+                            right: 20px
                         }
                 }
             }

@@ -37,6 +37,7 @@
 
         /*p Style*/
         @media (max-width: 600px) {
+          --wp--preset--font-size--medium: 18px;
           p {
             text-align: left !important;
           }
@@ -78,21 +79,31 @@
           padding: 80px;
             .wp-block-cover__inner-container{
               
-            .wp-block-image.aligncenter {
-              margin-bottom:40px;
-              img{
-                animation: rotate 6s linear infinite;
+              .wp-block-image.aligncenter {
+                margin-bottom:40px;
+                img{
+                  animation: rotate 6s linear infinite;
+                }
+              }
+              @keyframes rotate {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(360deg);
+                }
               }
             }
-            @keyframes rotate {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
+          @media (max-width: 768px){
+            padding:80px 40px;
           }
+          @media (max-width: 414px){
+            padding:40px 20px;
+          }  
+        }
+
+        .has-small-font-size{
+          font-size: 16px;
         }
 
 /* Animated Card */ 
@@ -172,7 +183,7 @@
       transition: background .25s ease;
 
       &:hover{
-        background: rgba(255,255,255,.95);
+        background: rgb(71 71 71)
       }
 
       &::before,
@@ -216,7 +227,7 @@
       }
 
       .mmsi-feature__close{
-        display: none;
+        transform: rotate(45deg) scale(1);
       }
       
     }
