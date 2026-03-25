@@ -8,12 +8,6 @@
     justify-content: center;
     align-items: flex-end;
 
-    @media (max-width: 768px) {
-        min-height: unset;
-        margin-bottom: 60px !important;
-    }
-    
-    
     >div {
         padding: 0 !important;
     }
@@ -48,7 +42,6 @@
                     padding-left: var(--mbfse--menu-item-padding);
                 }
                 
-
                 @media (min-width: 951px) and (max-width: 1199px) {
                     img {
                         width: 150px;
@@ -59,14 +52,21 @@
                         width: 120px;
                     }
                 }
-                @media (max-width: 768px) {
-                    display: none;
-                } 
             }
         }
 
         @media (max-width: 768px) {
-            right: 20px;
+            width: calc(100% - 55px);
+            right: 23px;
+            >div{
+                flex-direction: row;
+                
+                >div:first-child{
+                    flex:1;
+                    padding-left: 0;
+                
+                }
+            }
         }
     }
 
@@ -88,17 +88,31 @@
     }
     
     @media (max-width: 768px){
+        --mbfse-header-height:60px !important;
+        position: fixed;
+        min-height: 60px;
+        background: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
         >div {
             nav{
+                top:5px;
                 .wp-block-navigation__responsive-container{
-                        width: 100vw !important;
-                        background-color: var(--wp--preset--color--base);
-                        padding-left: 0 !important;
-                        .wp-block-navigation__responsive-container-close {
-                            right: 20px
-                        }
+                    width: 100vw !important;
+                    background-color: var(--wp--preset--color--base);
+                    padding-left: 0 !important;
+                    .wp-block-navigation__responsive-container-close {
+                        right: 23px;
+                        top:15px;
+                    }
                 }
             }
         }
     }
+}
+
+footer{
+    margin-top: auto;
 }
