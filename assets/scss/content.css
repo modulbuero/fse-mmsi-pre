@@ -334,10 +334,14 @@
 .wp-site-blocks > main .nf-form-cont .nf-form-title {
   display: none;
 }
+.wp-site-blocks > main .nf-form-cont textarea,
 .wp-site-blocks > main .nf-form-cont input:not([type=submit]) {
   background-color: #F5F5F5;
   border: none;
   height: 45px;
+}
+.wp-site-blocks > main .nf-form-cont textarea {
+  height: 200px;
 }
 .wp-site-blocks > main .nf-form-cont input[type=submit] {
   width: 100%;
@@ -347,6 +351,9 @@
   background-color: #F5F5F5;
   color: var(--wp--preset--color--secondary);
   border: 2px solid var(--wp--preset--color--secondary);
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.2;
 }
 .wp-site-blocks > main .nf-form-cont input[type=submit]:hover {
   background-color: var(--wp--preset--color--secondary);
@@ -354,9 +361,8 @@
 }
 .wp-site-blocks > main .nf-form-cont .nf-field-label {
   position: absolute;
-  top: 50%;
+  top: 13px;
   left: 12px;
-  transform: translateY(-50%);
   pointer-events: none;
   transition: all 0.25s ease;
   margin: 0;
@@ -368,7 +374,6 @@
 .wp-site-blocks > main .nf-form-cont .nf-field:focus-within .nf-field-label,
 .wp-site-blocks > main .nf-form-cont .nf-field.has-value .nf-field-label {
   top: -20px;
-  transform: translateY(0);
   font-size: 12px;
 }
 .wp-site-blocks .no-margin-bt {
