@@ -75,6 +75,7 @@
 .wp-site-blocks > main {
   /*Buttons*/
 }
+.wp-site-blocks > main .wp-block-file__button,
 .wp-site-blocks > main .wp-block-button__link {
   font-size: var(--wp--preset--font-size--xs);
   line-height: 18px !important;
@@ -82,6 +83,7 @@
   color: var(--wp--preset--color--secondary);
   border: 2px solid var(--wp--preset--color--secondary);
 }
+.wp-site-blocks > main .wp-block-file__button:hover,
 .wp-site-blocks > main .wp-block-button__link:hover {
   background-color: var(--wp--preset--color--secondary);
   color: var(--wp--preset--color--base);
